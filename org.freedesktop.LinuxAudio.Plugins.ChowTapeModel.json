@@ -37,6 +37,9 @@
             "build-options": {
                 "cxxflags": "-I/app/extensions/Plugins/ChowTapeModel/include"
             },
+            "make-args": [
+                "CHOWTapeModel_LV2"
+            ],
             "post-install": [
                 "install -d ${FLATPAK_DEST}/_BUILD",
                 "cp -R ./CHOWTapeModel_artefacts/Release/ ${FLATPAK_DEST}/_BUILD/",
